@@ -1,0 +1,154 @@
+#style {
+    background: #000e21;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    height: auto;
+}
+
+#head-content {
+    position: fixed;
+    background: #000e21;
+    z-index: 3;
+    width: 100%;
+    display: block;
+    height: 300px;
+}
+
+/* CSS FLEX UTILIZED BELOW IN HEADER */
+#header {
+    display: flex;
+    position: fixed;
+    z-index: 4;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: flex-start;       
+    border-radius: 35%;
+    background: linear-gradient(
+        90deg,  
+        #000e21, 
+        #003347, 
+        #000e21);
+}
+/* CSS FLEX UTILIZED ABOVE IN HEADER */
+
+#header-img {
+    width: 17vw;
+    display: block;
+    max-height: 300px;
+    border-radius: 35%;
+    border-collapse: collapse;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 334.9px;
+}
+
+#header-title {
+    font-size: 50px;
+}
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: red;
+    transform: rotate(-30deg);
+}
+
+#body-content {
+    margin-left: 395.75px;
+    margin-right: 395.75px;
+    text-align: center;
+}
+
+#video {
+    position: relative;
+    top: 345px;
+    max-width: 791.5px;
+}
+
+/* MEDIA QUERY UTILIZED BELOW FOR IPHONE5 */
+@media (max-width: 500px) {
+    #video {
+        width: 25%;
+    }
+}
+/* MEDIA QUERY UTILIZED ABOVE FOR IPHONE5 */
+
+#sale {
+    position: relative;
+    top: 400px;
+    border-top: red;
+    border-bottom: red;
+    border-top-style: double;
+    border-bottom-style: double;
+    height: 650px;
+    padding-bottom: 125px;
+}
+
+#sale-head {
+    font-family: cursive;
+    font-size: 75px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    left: -50px;
+    color: white;
+    text-shadow: -5px 0px 10px red;
+    z-index: 2;
+    transform: rotate(-25deg);
+}
+
+#sale-img {
+    height: 500px;
+    position: relative;
+    float: left;
+    top: -50px;
+    left: 45px;
+    z-index: 1;
+}
+
+#sale-description {
+    float: right;
+    position: relative;
+    top: 25px;
+    left: -45px;
+    font-size: 50px;
+    max-width: 300px;
+}
+
+#join {
+    color: white;
+}
+
+#join:hover {
+    color: red;
+}
+
+.red-text {
+    color: red;
+}
+
+#form {
+    position: relative;
+    top: 450px;
+}
+
+#footer {
+    position: relative;
+    bottom: -500px;   
+    text-align: center;
+}
